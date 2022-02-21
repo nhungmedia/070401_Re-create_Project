@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+:root {
+ /*FONT*/
+ --f-roboto--: 'Roboto', sans-serif;
+ --f-helevtica--: 'Arial, Helvetica, sans-serif';
+}
+/*COLOR*/
