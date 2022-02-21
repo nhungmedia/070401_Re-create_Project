@@ -26,6 +26,66 @@ a {
     text-decoration: none;
     color: var(--grey-link);
 }
+li {
+    list-style: none;
+}
+
 #wrapper nav {
-    border-bottom: 1px, solid, var(--grey-link);
-}    
+    border-bottom: 1px solid var(--grey-button);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+} 
+.recipePreview {
+    padding-top: 1.5rem;
+}
+.actions {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.logoBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30vw;
+}
+.title {
+    text-align: center;
+}
+.ratingBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: solid 1px var(--grey-button);
+}
+.sourceLogo {
+    border-right: solid 1px var(--grey-button) ;
+    border-left: solid 1px var(--grey-button) ;
+}
+.ingredientsBox {
+    display: flex;
+    flex-direction: column;
+}
+.ingredientButton {
+    display: flex;
+    flex-direction: row;
+
+}
+/*MAIN CONTENT*/
+@media only screen and (min-width: 600px) {
+
+.recipePreview {
+    margin-left: auto;
+    margin-right:auto;
+    max-width: 600px;
+    display: block;
+
+
+}
+}
+
+
+  
+
