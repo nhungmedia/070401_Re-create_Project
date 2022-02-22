@@ -106,9 +106,15 @@ button {
     margin-right:auto;
     max-width: 600px;
     display: block;
-
+}
 
 }
+.imageWrapper {
+/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr; */
+display: flex;
+flex-direction: column;
+
 }
 
 
