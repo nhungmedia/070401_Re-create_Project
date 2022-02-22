@@ -97,7 +97,16 @@ button {
     grid-template-columns: 1fr 1fr;
     
 }
-
+.imageWrapper {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+.imageGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap:1rem;
+}
 /*MAIN CONTENT*/
 @media only screen and (min-width: 600px) {
 
@@ -107,16 +116,13 @@ button {
     max-width: 600px;
     display: block;
 }
-
+.imageGrid {   
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .imageWrapper {
-/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr; */
-display: flex;
-flex-direction: column;
-
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
+}
 
   
 
