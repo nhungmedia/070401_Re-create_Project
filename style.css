@@ -54,12 +54,30 @@ h5 {
     margin-top: 1em;
    
 }
+
 #wrapper nav {
     border-bottom: 1px solid var(--grey-button);
     display: flex;
     flex-direction: row;
     justify-content: space-between;    
 } 
+/*FOOTER*/
+#footerWrapper {
+    background-color: var(--footer-background);
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh ;
+}
+footer p {
+    text-align: center;
+    color: var(--grey-link);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: -3rem;
+}
+.footer-grid ul {
+    padding-left: 0;
+}
 .mainContent {
     margin-right: 5vw;
     margin-left:5vw;
@@ -166,6 +184,10 @@ h5 {
     display: block;
 }
 
+.fiveColumns-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
 
 }
 
