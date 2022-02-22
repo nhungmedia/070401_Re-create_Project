@@ -1,10 +1,12 @@
-const ImgWrapper = document.querySelector (".imageWrapper")
-const ImgParent = document.querySelector (".fromEpicurious")
+const ImgWrapper = document.querySelector (".imageWcontainer")
+const ImgParent = document.querySelector (".imageWrapper")
 //Do smth 10 times
-for(let i = 0; i < 10; i++){
+for(let i = 0; i < 4; i++){
 const copy = ImgWrapper.cloneNode(true)
 ImgParent.appendChild(copy)
 }
+
+
 const ImgGrid = document.querySelector (".imageContainer")
 const Img2Parent = document.querySelector (".imageGrid")
 //Do smth 10 times

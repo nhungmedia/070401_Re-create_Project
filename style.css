@@ -7,7 +7,10 @@
 --footer-background: #eeeeee;
 
     /*FONTS*/
+--f-helvetica:  Arial, "Helvetica Neue"; 
+
 }
+/*GENERAL STYLE*/
 * {
 box-sizing: border-box;
 }
@@ -15,7 +18,12 @@ body {
     font-family: -apple-system,BlinkMacSystemFont, "Segoe UI",Roboto, Oxygen-Sans, Ubuntu,Cantarell,"Helvetica Neue", sans-serif;
     font-size: 100%;
     margin: 0;
+    padding: 0;
+    font-weight: 400;
+    line-height: 1.563;
+    
   }
+
 img {
     display: block;
     height: auto;
@@ -24,7 +32,9 @@ img {
 }  
 a {
     text-decoration: none;
-    color: var(--grey-link);
+    
+    
+    
 }
 li {
     list-style: none;
@@ -34,7 +44,16 @@ li {
 button {
     border-radius: 10%;
 }
-
+/*TYPOGRAPHY*/
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-bottom: 1rem;
+    margin-top: 1em;
+   
+}
 #wrapper nav {
     border-bottom: 1px solid var(--grey-button);
     display: flex;
@@ -81,6 +100,9 @@ button {
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
+.ingredient ul {
+    padding-left: 0%;
+}
 .ingredientButton {
     padding-top: 1rem;
     padding-bottom: 2rem;
@@ -98,15 +120,42 @@ button {
     
 }
 .imageWrapper {
-    display: grid;
+    display: flex;
     gap: 1rem;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    flex-wrap: wrap;    
 }
 .imageGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap:1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
+.heroContainer {
+    position: relative;
+    max-width: fit-content;
+    margin:0;
+}
+.heroContainer .heroText {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.heroContainer .heroWtext {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.heroContainer a:hover {
+   background-color:hotpink; 
+}
+
 /*MAIN CONTENT*/
 @media only screen and (min-width: 600px) {
 
@@ -116,12 +165,8 @@ button {
     max-width: 600px;
     display: block;
 }
-.imageGrid {   
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-.imageWrapper {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
+
+
 }
 
   
