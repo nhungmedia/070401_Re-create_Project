@@ -31,9 +31,8 @@ img {
 
 }  
 a {
-    text-decoration: none;
-    
-    
+    text-decoration: none;   
+  
     
 }
 li {
@@ -41,9 +40,7 @@ li {
     margin: 0;
     padding: 0;
 }
-button {
-    border-radius: 10%;
-}
+
 /*TYPOGRAPHY*/
 h1,
 h2,
@@ -54,13 +51,21 @@ h5 {
     margin-top: 1em;
    
 }
-
+/*HEADER*/
 #wrapper nav {
     border-bottom: 1px solid var(--grey-button);
     display: flex;
     flex-direction: row;
     justify-content: space-between;    
 } 
+.logoBox h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.logoBox h1 span {    
+    font-weight: 500;
+}
+
 /*FOOTER*/
 #footerWrapper {
     background-color: var(--footer-background);
@@ -73,10 +78,48 @@ footer p {
     text-align: center;
     color: var(--grey-link);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: -3rem;
+    font-size: -3em;
+    font-weight: 300;
 }
 .footer-grid ul {
     padding-left: 0;
+}
+.footer-grid {
+    border-bottom: 1px solid var(--grey-link);
+    padding-bottom: 2rem;
+}
+.footer-grid li {
+    color: var(--grey-link);
+    font-size: 14px;
+    line-height: 1.8;
+}
+.footer-grid h5 {
+    font-weight: 600;
+}
+.apple {
+    display: grid;
+    grid-template-rows: 1;
+    margin-left: 5rem;
+    margin-right: 5rem;    
+
+}
+.apple label {
+    padding-bottom: 0;
+
+}
+.apple button {
+    background-color: black;
+    color: white;   
+    border: none;
+    border-radius: 1.5rem;
+    /* padding: 0.5px 20px; */   
+    cursor:pointer;
+    padding-top: 0;
+    max-width: 150px;
+}
+.apple span {
+    font-size: 1.1rem;
+    font-weight: 500;    
 }
 .mainContent {
     margin-right: 5vw;
