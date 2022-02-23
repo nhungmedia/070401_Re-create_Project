@@ -1,7 +1,7 @@
 const ImgWrapper = document.querySelector (".imageWcontainer")
 const ImgParent = document.querySelector (".imageWrapper")
 //Do smth 10 times
-for(let i = 0; i < 4; i++){
+for(let i = 0; i < 5; i++){
 const copy = ImgWrapper.cloneNode(true)
 ImgParent.appendChild(copy)
 }
